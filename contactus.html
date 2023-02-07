@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>contactus</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+.nav{
+background-color:transparent;
+background-repeat: no-repeat;
+
+background-position: center;
+list-syle-type:none;
+text-align:center;
+margin:0;
+padding:0;
+}
+.nav li{
+display:inline-block;
+font-size:20px;
+padding:20px;
+}
+</style>
+
+ <body>
+    <div class="container">
+        <div class="text">LETS ORDER</div>
+        <form action="#" name="google-sheet">
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Name</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">PHONE NUMBER</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Email Address</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">PRODUCT CODE-QUANTITY</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data textarea">
+                 <textarea rows="8" cols="80" required></textarea>
+                 <br />
+                 <div class="underline"></div>
+                 <label for="">ADDRESS</label>
+                 <br />
+                 <div class="form-row submit-btn">
+                    <div class="input-data">
+                       <div class="inner"></div>
+                       <input type="submit" value="submit">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </form>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxlGncHnOcE7EIenh3b8aXIGprUuUHJ7lr1CE-8Zhcxm4-Tp9QYWdj2pBnHCYnwOviR/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+     </div>
+     <footer>
+      <h2 align="right" style="margin-left: 20px;">for any querys contact:7660993784</h2>
+   </footer>
+   </body>
+</html>
