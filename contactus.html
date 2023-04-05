@@ -7,10 +7,9 @@
     <link rel="shortcut icon" type="x-icon" href="bm-image.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Contact Form</title>
     <style>
         form {
@@ -57,7 +56,6 @@
 </head>
  
 <body bg="sun.jpeg"> 
-    
             <ul class="nav">
         <li><a href="home.html">HOME  </a></li>
         <li><a href="about us.html">ABOUT US</a></li>
@@ -73,12 +71,24 @@
         <input type="text" name="name" placeholder='Name..'>
         <input type="email" name="email" placeholder='Email..'>
         <input type="text" name="phno" placeholder='Phone Number..'>
-        <input type="text" name="prqu" placeholder='Product code-Quantity..'>
         <textarea name="message" cols="30" rows="10" placeholder='Address..'></textarea>
+
+        <input type="checkbox" id="organic-jaggery" name="oj" value="organic-jaggery">
+        <textarea type="text" name="quantity1" placeholder='Quantity for organic jaggery' cols="5" rows="1"></textarea>
+        <label for="organic-jaggery"> organic-jaggery</label><br>
+          
+        <input type="checkbox" id="white-jaggery" name="wj" value="white-jaggery">
+        <input type="text" name="quantity2" placeholder='Quantity for white jaggery'>
+        <label for="white-jaggery"> white-jaggery</label><br>
+          
+        <input type="checkbox" id="panakam" name="pak" value="panakam">
+        <input type="text" name="quantity3" placeholder='Quantity for panakam'>
+        <label for="panakam"> panakam</label><br><br>
         <input type="submit" class="submit">
     </form></center>
     <script>
-        let url = "https://script.google.com/macros/s/AKfycbzVjNQuix28jxv724BF5SCgnC9uzQVtn-5-3MYTM3VXCh2bdqFE1PANge--f8CqL9KO/exec";
+        
+        let url = "https://script.google.com/macros/s/AKfycbx9Q2fVnK4v6_mD85EgNqpZEORAYVBq7ePynthqEMO5Y6636Lp_3EhESjKjLXVbSqk/exec"
         let form = document.querySelector("form");
         let submit = document.querySelector(".submit");
         let message = document.querySelector(".message");
