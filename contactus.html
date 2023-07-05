@@ -28,6 +28,7 @@
         body 
         {
             background-image: url('sun.jpeg');
+            background-color: orange;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -65,7 +66,7 @@
     </style>
 </head>
  
-<body bg="sun.jpeg"> 
+<body style="background-color: orange;"> 
             <ul class="nav" style="background-color: white;">
         <li><a href="home.html">HOME  </a></li>
         <li><a href="about us.html">ABOUT US</a></li>
@@ -80,23 +81,23 @@
   <span class="message"></span>
 
   <label for="name">Name:</label>
-  <input type="text" id="name" name="name" placeholder="Name..">
+  <input type="text" id="name" name="name" placeholder="Name.." required>
 
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email" placeholder="Email..">
+  <input type="email" id="email" name="email" placeholder="Email.." required>
 
   <label for="phno">Phone Number:</label>
-  <input type="text" id="phno" name="phno" placeholder="Phone Number..">
+  <input type="text" id="phno" name="phno" placeholder="Phone Number.." required>
 
   <label for="message">Address:</label>
-  <textarea id="message" name="message" cols="20" rows="10" placeholder="Address.."></textarea>
+  <textarea id="message" name="message" cols="20" rows="10" placeholder="Address.." required></textarea>
 
   <div class="checkbox-group">
     <label for="organic-jaggery">
       <input type="checkbox" id="organic-jaggery" name="oj" value="organic-jaggery">
       <span class="checkbox-label"><mark>Organic Jaggery</mark></span>
     </label>
-    <input type="text" name="quantity1" placeholder="Quantity for organic jaggery">
+    <input type="number" name="quantity1" placeholder="Quantity for organic jaggery">
   </div>
 
   <div class="checkbox-group">
@@ -104,7 +105,7 @@
       <input type="checkbox" id="white-jaggery" name="wj" value="white-jaggery">
       <span class="checkbox-label"><mark>White Jaggery</mark></span>
     </label>
-    <input type="text" name="quantity2" placeholder="Quantity for white jaggery">
+    <input type="number" name="quantity2" placeholder="Quantity for white jaggery">
   </div>
 
   <div class="checkbox-group">
@@ -112,7 +113,7 @@
       <input type="checkbox" id="Liquid-Jaggery" name="lj" value="Liquid-Jaggery">
       <span class="checkbox-label"><mark>Liquid Jaggery</mark></span>
     </label>
-    <input type="text" name="quantity3" placeholder="Quantity for Liquid jaggery">
+    <input type="number" name="quantity3" placeholder="Quantity for Liquid jaggery">
   </div>
 
   <input type="submit" class="submit" value="Submit">
