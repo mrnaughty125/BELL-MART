@@ -47,6 +47,24 @@
         .owl-carousel .owl-nav button.owl-next:hover {
           background-color: rgba(0, 0, 0, 0.7);
         }
+
+        /* Custom CSS for the orange button */
+    .navbar-light .navbar-nav .nav-link {
+      color: orange; /* Text color */
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: black; /* Text color on hover */
+      background-color: orange; /* Background color on hover */
+    }
+
+    .navbar-light .navbar-toggler {
+      border-color: blue; /* Toggler border color */
+    }
+
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='3' y1='2.5' x2='30' y2='2.5' stroke='orange' stroke-width='5'%3E%3C/line%3E%3Cline x1='3' y1='15' x2='30' y2='15' stroke='orange' stroke-width='5'%3E%3C/line%3E%3Cline x1='3' y1='27.5' x2='30' y2='27.5' stroke='orange' stroke-width='5'%3E%3C/line%3E%3C/svg%3E"); /* Toggler icon color */
+    }
     </style>
 </head>
 
@@ -59,22 +77,42 @@
 </div>
 
 <div class="sticky-top">
-<div class="m-4" >
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid" >
-              
+    <div class="m-4">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="nav logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            BELL MART
+          </a>
 
-               <div class="navbar-nav ms-auto">
-                    <a href="home.html" class="nav-item nav-link active">HOME</a>
-                    <a href="about us.html" class="nav-item nav-link active">ABOUT US</a>
-                    <a href="workspace.html" class="nav-item nav-link active">WORK SPACE</a>
-                    <a href="ourproducts.html" class="nav-item nav-link active">OUR PRODUCTS</a>
-                    <a href="contactus.html" class="nav-item nav-link active">ORDER HERE</a>
-                </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="home.html" class="nav-link">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="about us.html" class="nav-link">ABOUTUS</a>
+              </li>
+              <li class="nav-item">
+                <a href="workspace.html" class="nav-link">WORKSPACE</a>
+              </li>
+              <li class="nav-item">
+                <a href="ourproducts.html" class="nav-link">OURPRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a href="contactus.html" class="nav-link">ORDERHERE</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-</div>
-</div>
+    </div>
+  </div>
 
     <div class="container-fluid my-5">
         <div class="row">
